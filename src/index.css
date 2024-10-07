@@ -30,13 +30,15 @@ img {
 }
 
 .card-container {
+  justify-content: center;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 .card-container .card {
+  flex: 0 0 200px;
   background-color: gray;
-  width: 200px;
   height: 300px;
   border: 3px solid #2e2e2e;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
@@ -52,7 +54,7 @@ body {
 }
 
 .site {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   box-sizing: border-box;
   padding: 0;

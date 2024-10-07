@@ -21,19 +21,23 @@ function App() {
   }
 
   return (
-    <div className="site">
-      <div>{msg}</div>
-      <div className="card-container">
-        {CARDS.map((cardItem, index) => (
-          <Card
-            key={index}
-            isSelected={selectedCard === index + 1}
-            onSelect={() => handleSelect(index + 1)}
-            cardReveal={cardItem[1] ? true : false}
-          />
-        ))}
+    <>
+      <div className="site">
+        <header>
+          <h1>{msg}</h1>
+        </header>
+        <div className="card-container">
+          {CARDS.map((cardItem, index) => (
+            <Card
+              key={index}
+              isSelected={selectedCard === index + 1}
+              onSelect={() => handleSelect(index + 1)}
+              cardReveal={cardItem[1] ? true : false}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
