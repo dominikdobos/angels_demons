@@ -1,0 +1,22 @@
+@import "variables";
+@import "resets";
+@import "components/card";
+
+body {
+  background-color: rgb(205, 148, 110);
+}
+
+.site {
+  width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: $base-margin;
+
+  h1 {
+    color: $primary;
+    text-align: center;
+    padding: $base-padding;
+    font-size: $font-size-xxl;
+  }
+}
